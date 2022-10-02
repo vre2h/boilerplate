@@ -24,6 +24,7 @@ Use commitizen strategy for all commits
     - `display` - statistics
 - `helpers` - not important helper functions
 - `pages` - routes
+- `libs` - lib integrations
 
 ## Commands
 
