@@ -1,11 +1,16 @@
 import { Button, Space } from "antd";
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  increment,
+  selectCount,
+} from "./libs/redux/slices/counter/counterSlice";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const count = useSelector(selectCount);
+  const dispatch = useDispatch();
 
-  const handleInc = () => setCount((c) => c + 1);
+  const handleInc = () => dispatch(increment());
 
   return (
     <div className="App">
