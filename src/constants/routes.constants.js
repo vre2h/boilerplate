@@ -3,4 +3,5 @@ export const OnexAppRoutes = {
   fallback: () => "*",
   home: () => "/",
   signUp: () => "/sign-up",
+  customers: () => "/customers",
 };
