@@ -8,6 +8,7 @@ export default function AuthenticatedApp() {
     <Routes>
       <Route path={OnexAppRoutes.home()} element={<Home />} />
       <Route path={OnexAppRoutes.customers()} element={<Customers />} />
+      <Route path={OnexAppRoutes.fallback()} element={<Home />} />
     </Routes>
   );
 }
